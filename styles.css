@@ -1,0 +1,81 @@
+/* Inter-Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.font-inter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Mima font */
+@font-face {
+  font-family: 'Miama';
+  src: url('./fonts/Miama.ttf') format('truetype');
+}
+
+.miama-font {
+  font-family: 'Miama', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(0, 0, 0);;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.text-primary{
+    color: rgb(230, 83, 60);
+}
+
+.text-light{
+    color: rgb(255, 255, 255);
+}
+
+.text-secondary{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-primary{
+    background-color: rgb(230, 83, 60);
+}
+
+.bg-dark{
+    background-color: rgb(34, 34, 34)
+}
+
+.bg-dark2{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary{
+    display: inline-block;
+    text-align: center;
+    width: 224px;
+    border-radius: 42px;
+}
+
+.btn-primary button{
+    margin: 15px 0px;
+    background: transparent;
+    border: none;
+
+    
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+
+.display-flex{
+    display: flex;
+}
