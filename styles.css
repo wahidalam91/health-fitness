@@ -13,8 +13,11 @@
   src: url('./fonts/Miama.ttf') format('truetype');
 }
 
-.miama-font {
+.font-miama {
   font-family: 'Miama', cursive;
+    font-size: 9rem;
+    font-weight: 400;
+    line-height: 50%;
 }
 
 *{
@@ -24,7 +27,7 @@
 }
 
 body{
-    background: rgb(0, 0, 0);;
+    background: rgb(0, 0, 0);
 }
 
 .container{
@@ -42,6 +45,11 @@ body{
 
 .text-secondary{
     color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+
 }
 
 .bg-primary{
@@ -56,14 +64,16 @@ body{
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.btn-primary{
+.btn-primary,
+.btn-secondary{
     display: inline-block;
     text-align: center;
-    width: 224px;
+    width: 30%;
     border-radius: 42px;
 }
 
-.btn-primary button{
+
+.btn-container button{
     margin: 15px 0px;
     background: transparent;
     border: none;
@@ -75,7 +85,249 @@ body{
     letter-spacing: 0px;
 }
 
+.btn-secondary{
+    margin-left: 15px;
+    border: 1px solid rgb(255, 255, 255);
+}
 
 .display-flex{
     display: flex;
 }
+
+/* Header */
+
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+/* Nav Bar */
+nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 58px 0px 32px 0px;
+    
+}
+
+.nav-title{
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 120%;
+    font-style: italic;
+}
+
+.nav-menu{
+    gap: 47px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 3px;
+
+}
+
+.nav-menu li{
+    list-style: none;
+}
+
+.nav-links{
+    text-decoration: none;
+}
+
+.nav-menu .btn-primary{
+    display: inline-block;
+    text-align: center;
+    width: 92px;
+    border-radius: 46px;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 110%;
+    padding: 4px;
+}
+
+.nav-menu .btn-primary:hover{
+    background-color: rgb(230, 83, 60);
+}
+
+.menu-icon{
+    display: none;
+}
+
+/* Banner */
+.banner-content{
+    gap: 89px;
+    justify-content: start;
+}
+
+.banner-title{
+    font-size: 4.8rem;
+    font-weight: 900;
+    line-height: 120%;
+    word-spacing: 1px;
+    
+}
+
+.banner-description{
+    width: 65%;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.banner-text{
+    margin-top: 50px;
+}
+
+.video-tutorial{
+    width: 206px;
+    height: 96px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+
+    backdrop-filter: blur(20px);
+}
+
+
+.ellipse{
+    padding: 20px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: rgb(230, 83, 60);
+}
+
+.vt-text span,
+.video-tutorial span{
+    margin: 0;
+    padding: 0;
+    color: rgba(239, 237, 232, 0.65);
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.fwv{
+    padding: 24px 17px;
+    font-size: 2.5rem;
+}
+
+.fwv span{
+    margin-top: 5px;
+}
+
+#video-tutorial{
+    margin-left: -30%;
+    margin-top: -47%;
+}
+
+#free-workout{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    margin-left: 65%;
+    margin-top: -110%;
+}
+
+
+@media screen and (max-width: 576px) {
+    .container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+    nav{
+    padding: 52px 0px 32px 0px;
+    
+    }
+    .nav-menu{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+
+    .banner-content{
+    gap: 20px;}
+
+    .banner-title{
+    font-size: 2.25rem;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+    width: 47%;
+    }
+
+    .ellipse{
+    max-width: 20px;
+    }
+
+    .font-miama {
+    font-family: 'Miama', cursive;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 70%;
+    }
+
+    .banner-description{
+    width: 80%; 
+    }
+    
+    .banner-text{
+    margin-top: 50px;
+    }
+    
+    .banner-content{
+        flex-direction: column;
+    }
+
+    .banner-img-container{
+        padding: 0 30px;
+    }
+
+    .banner-img-container img{
+        width: 100%;
+    }
+
+    .video-tutorial{
+    width: 50%;
+    height: 50px;
+    height: auto;
+    font-size: 1rem;
+    }
+
+    .fwv{
+    padding: 10px 10px;
+    font-size: 2rem;
+    line-height: 80%;
+    }
+
+    .fwv span{
+    font-size: 13px;
+    }
+
+    #video-tutorial{
+    height: 75px ;
+    margin-left: 0;
+    margin-top: -80%;
+    }
+
+    #free-workout{
+    border-radius: 3px;
+    width: 48%;
+    height: 75px;
+    margin-left: 55%;
+    margin-top: -75%;
+}
+}
+
+
+
+
+
+
