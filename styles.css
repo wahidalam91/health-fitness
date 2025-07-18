@@ -94,6 +94,26 @@ body{
     display: flex;
 }
 
+.section-title{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+.section-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.text-centre{
+    text-align: center;
+}
+
 /* Header */
 
 header{
@@ -152,6 +172,11 @@ nav{
 }
 
 /* Banner */
+
+.banner{
+    margin-bottom: 100px;
+}
+
 .banner-content{
     gap: 89px;
     justify-content: start;
@@ -172,7 +197,7 @@ nav{
 }
 
 .banner-text{
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .video-tutorial{
@@ -233,6 +258,52 @@ nav{
     margin-left: 65%;
     margin-top: -110%;
 }
+
+/* Change Habit */
+.change-habit{
+    margin-top: 200px;
+}
+
+
+.change-habit .section-description{
+    margin-bottom: 54px;
+}
+
+.ellipse-cards-container{
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-content{
+    margin: 0 40px;
+}
+
+.card-content .card-img{
+    background-color: rgb(34, 34, 34);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px
+}
+
+.card-img img{
+    margin: 2px;
+    border-radius: 100%;
+}
+
+.card-title{
+    color: rgb(255, 255, 255);
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+
+
 
 
 @media screen and (max-width: 576px) {
