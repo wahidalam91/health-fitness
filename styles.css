@@ -302,8 +302,46 @@ nav{
     margin-bottom: 10px;
 }
 
+/* Extra Mile Section */
+
+.extra-mile{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+}
+
+.em-content{
+    align-items: center;
+}
+
+.em-text{
+    padding: 40px;
+}
+
+.em-img{
+    padding: 30px 30px 30px 0px;
+}
+
+.em-text .section-title{
+    width: 40%;
+}
+
+.em-text .section-description{
+    width: 50%;
+    line-height: 24px;
+}
 
 
+.em-img{
+    max-width: 50%;
+}
+
+.em-img img{
+    width: 366px;
+    height: 312px;
+    background-position: center;
+}
 
 
 @media screen and (max-width: 576px) {
